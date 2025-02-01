@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 
 import correct from "/sounds/correct.mp3";
 import wrong from "/sounds/wrong.mp3";
+import Timer from "../components/Timer";
 
 const QuizCard: FC<{
   question: Question;
@@ -24,7 +25,7 @@ const QuizCard: FC<{
   const playCorrect = useSound(correct);
   const playWrong = useSound(wrong);
 
-  const handleClick = (opt: Option) => {
+  function handleClick(opt: Option) {
     onSelectAnswer(question.id, opt.id, opt.is_correct);
 
     if (opt.is_correct) {
@@ -36,14 +37,15 @@ const QuizCard: FC<{
     setTimeout(() => {
       nextQuestion();
     }, 500);
-  };
+  }
   return (
     <motion.div
       initial={{ opacity: 0, x: -40 }} // Initial state: slightly up and transparent
       animate={{ opacity: 1, x: 0 }} // Animated state: fully visible and normal position
       transition={{ duration: 1 }} // Smooth transition for 0.5 seconds
-      className="p-6 rounded-lg "
+      className="p-6 rounded-lg relative"
     >
+      <Timer />
       {/* Question Text with animation */}
       <motion.h2
         className="text-lg font-semibold"
