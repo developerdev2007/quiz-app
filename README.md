@@ -1,50 +1,95 @@
-# React + TypeScript + Vite
+# Quiz App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fun and interactive web-based quiz application with gamification features. This app allows users to take a quiz, answer questions, and receive scores with immediate feedback on their answers. The application includes animations, sound effects, and a modern, sleek design.
 
-Currently, two official plugins are available:
+## Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This quiz app features:
 
-## Expanding the ESLint configuration
+- **Multiple Choice Questions**: The user is presented with a series of questions and multiple options.
+- **Gamified Scoring System**: Correct answers earn +4 points, while incorrect answers deduct -1 point.
+- **Interactive Animations**: The app uses `framer-motion` to provide smooth and visually appealing animations.
+- **Sound Feedback**: Sounds are played for correct and incorrect answers.
+- **Results Page**: A results page is displayed after quiz completion with a score summary.
+- **React Router**: For handling navigation between pages (Home, Quiz, Results).
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Tech Stack
 
-- Configure the top-level `parserOptions` property like this:
+- **Frontend**: React.js
+- **State Management**: Zustand
+- **Animations**: `framer-motion`
+- **Routing**: `react-router-dom`
+- **Sound**: Custom sounds for correct and incorrect answers.
+- **Styling**: Tailwind CSS
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Live Demo
+
+Check out the live version of the app:
+[Quiz App](https://quiz-app-developerdev2007.netlify.app/)
+
+## Setup Instructions
+
+Follow these steps to get the project up and running on your local machine:
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/developerdev2007/quiz-app.git
+cd quiz-app
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### 2. Install Dependencies
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Run the following command to install the required dependencies:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+npm install
 ```
+
+### 3. Start the Development Server
+
+Run the development server with:
+
+```bash
+npm run dev
+```
+
+The app should now be running at `http://localhost:5173/` (if using Vite).
+
+### 4. Build for Production
+
+To create an optimized production build, run:
+
+```bash
+npm run build
+```
+
+### 5. Run the Production Build
+
+To serve the built application, use:
+
+```bash
+npm run preview
+```
+
+### 6. Environment Variables (if any)
+
+If the quiz data is fetched from an API, create a `.env` file and add your API endpoint:
+
+```plaintext
+VITE_API_URL=https://your-api-endpoint.com
+```
+
+Make sure to replace the URL with the actual API endpoint.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contributions
+
+Contributions are welcome! Feel free to fork the repository and submit a pull request with improvements.
+
+## Contact
+
+For any questions or support, feel free to reach out at **developerdev2007\@gmail.com**

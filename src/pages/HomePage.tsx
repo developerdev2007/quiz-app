@@ -10,7 +10,7 @@ const Home = () => {
     <div className="flex items-center w-full justify-center h-screen bg-gradient-to-br from-purple-700 via-indigo-800 to-blue-900">
       {/* Glowing Card */}
       <motion.div
-        className="relative bg-gray-900 text-white p-10 rounded-3xl shadow-lg max-w-lg w-full text-center border-4 border-transparent"
+        className="relative bg-gray-900 text-white sm:p-10 p-6 py-10  rounded-3xl shadow-lg max-w-lg w-full text-center border-4 border-transparent"
         initial={{ scale: 0.8, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.5, ease: "easeOut" }}

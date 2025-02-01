@@ -39,10 +39,10 @@ const QuizPage = () => {
   const handleShowResult = () => navigate("/results");
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-gradient-to-r from-sky-400 via-blue-400 to-cyan-500">
+    <div className="overflow-hidden flex justify-center w-full items-center min-h-screen bg-gradient-to-r from-sky-400 via-blue-400 to-cyan-500">
       {/* Main Container with fade-in effect */}
       <motion.div
-        className="p-8 max-w-xl min-w-lg mx-auto bg-blue-900/50  backdrop-blur-2xl bg- rounded-xl shadow-xl"
+        className="px-4 py-8 max-w-xl w-full md:mx-auto bg-blue-900/50  backdrop-blur-2xl bg- rounded-xl shadow-xl"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
@@ -73,12 +73,12 @@ const QuizPage = () => {
         />
 
         {/* Navigation Buttons with gradient background and scale animation */}
-        <div className="mt-6 flex justify-between">
+        <div className="mt-6 sm:px-8 px-4 flex  gap-1 justify-between">
           {currentQuestion > 0 && (
             <motion.button
               onClick={prevQuestion}
               whileTap={{ scale: 0.95 }}
-              className="px-6 py-2 flex items-center gap-3 rounded-lg bg-gradient-to-r from-gray-600 to-gray-700 hover:from-gray-500 hover:to-gray-600 text-white transition"
+              className="px-4 py-2 flex items-center gap-3 rounded-lg bg-gradient-to-r from-gray-600 to-gray-700 hover:from-gray-500 hover:to-gray-600 text-white transition"
             >
               <MoveLeft size={20} />
               Previous
@@ -89,7 +89,7 @@ const QuizPage = () => {
             <motion.button
               onClick={nextQuestion}
               whileTap={{ scale: 0.95 }}
-              className="px-6 py-2 flex items-center gap-3 rounded-lg bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-400 hover:to-indigo-500 text-white transition"
+              className="px-4 py-2 flex items-center gap-3 rounded-lg bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-400 hover:to-indigo-500 text-white transition"
             >
               Next
               <MoveRight size={20} />
@@ -98,7 +98,7 @@ const QuizPage = () => {
             <motion.button
               onClick={handleShowResult}
               whileTap={{ scale: 0.95 }}
-              className="px-6 py-2 flex items-center gap-3 rounded-lg bg-gradient-to-r from-green-400 to-green-500 hover:from-green-300 hover:to-green-400 text-white transition"
+              className="px-4 py-2 flex items-center gap-3 rounded-lg bg-gradient-to-r from-green-400 to-green-500 hover:from-green-300 hover:to-green-400 text-white transition"
             >
               See Results
               <MoveRight size={20} />
