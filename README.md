@@ -56,11 +56,13 @@ Here are some screenshots of the app:
 
 Watch the demo video here:
 
+[![Quiz App Video](/videos/quiz-app.gif)](/video/quiz-app.gif)
+
 [![Quiz App Video](/videos/Quiz-app-video-demo.mp4)](/video/Quiz-app-video-demo.mp4)
 
 If the video is not playing, you can watch it on Google Drive:
 
-[Watch Video on Google Drive](https://drive.google.com/file/d/15KZVU_wwYjAvpeSZad3tJvZvDk80kp0S/view?usp=sharing)
+[Watch Video on Google Drive](https://drive.google.com/file/d/1VEFyoxQH5SmDB-loLV1lYyndcrvxOd9y/view?usp=sharing)
 
 ## Setup Instructions
 
