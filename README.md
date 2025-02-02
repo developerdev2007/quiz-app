@@ -11,7 +11,18 @@ This quiz app features:
 - **Interactive Animations**: The app uses `framer-motion` to provide smooth and visually appealing animations.
 - **Sound Feedback**: Sounds are played for correct and incorrect answers.
 - **Results Page**: A results page is displayed after quiz completion with a score summary.
+- **Timer Functionality**: Each question has a timer to challenge users to answer within a set time frame, adding urgency and enhancing the gamification aspect.
 - **React Router**: For handling navigation between pages (Home, Quiz, Results).
+
+## Timer Functionality
+
+To enhance the gamified experience, the quiz includes a **timer** for each question. The timer counts down from 30 seconds for each question. When the time runs out:
+
+- The current question is marked as unanswered, and the app moves to the next question.
+- The user is notified if they failed to answer within the time limit.
+- This feature helps create a sense of urgency and challenges users to think quickly.
+
+The timer is visually displayed at the top of each quiz question page, providing real-time feedback to users on how much time they have left.
 
 ## Tech Stack
 
@@ -24,8 +35,32 @@ This quiz app features:
 
 ## Live Demo
 
-Check out the live version of the app:
+Check out the live version of the app:  
 [Quiz App](https://quiz-app-developerdev2007.netlify.app/)
+
+## Screenshots
+
+Here are some screenshots of the app:
+
+![Home Page](/screenshots/HomePage.png)
+
+![Quiz Page](/screenshots/QuizPage1.png)
+
+<!-- ![Quiz Page](/screenshots/QuizPage2.png) -->
+
+![Quiz Page](/screenshots/QuizPage3.png)
+
+![Results Page](/screenshots/ResultPage.png)
+
+## Video Demo
+
+Watch the demo video here:
+
+[![Quiz App Video](/videos/Quiz-app-video-demo.mp4)](/video/Quiz-app-video-demo.mp4)
+
+If the video is not playing, you can watch it on Google Drive:
+
+[Watch Video on Google Drive](https://drive.google.com/file/d/15KZVU_wwYjAvpeSZad3tJvZvDk80kp0S/view?usp=sharing)
 
 ## Setup Instructions
 
@@ -92,4 +127,4 @@ Contributions are welcome! Feel free to fork the repository and submit a pull re
 
 ## Contact
 
-For any questions or support, feel free to reach out at **developerdev2007\@gmail.com**
+For any questions or support, feel free to reach out at **developerdev2007@gmail.com**
